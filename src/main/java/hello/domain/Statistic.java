@@ -10,11 +10,11 @@ public class Statistic
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
 
+    private String date;
     private int stepsAmount;
     private int caloriesLost;
     private float distanceTraveled;
     private int drunkWaterGlasses;
-    private String exerciseName;
 
     public Integer getId() {
         return id;
@@ -22,6 +22,14 @@ public class Statistic
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public int getStepsAmount() {
@@ -54,13 +62,5 @@ public class Statistic
 
     public void setDrunkWaterGlasses(int drunkWaterGlasses) {
         this.drunkWaterGlasses = drunkWaterGlasses;
-    }
-
-    public String getExerciseName() {
-        return exerciseName;
-    }
-
-    public void setExerciseName(String exerciseName) {
-        this.exerciseName = exerciseName;
     }
 }

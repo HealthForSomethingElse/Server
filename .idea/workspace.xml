@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30dca823-a192-45b4-8c9b-95d97a5965ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/repos/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HealthServ.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/domain/Statistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/domain/Statistic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/domain/Statistic$exerciseName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello/domain/Statistic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/domain/Statistic.class" afterDir="false" />
-    </list>
+    <list default="true" id="30dca823-a192-45b4-8c9b-95d97a5965ce" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +172,7 @@
       <workItem from="1574784942324" duration="5969000" />
       <workItem from="1574794079449" duration="30000" />
       <workItem from="1575819298978" duration="38000" />
-      <workItem from="1576519091267" duration="3327000" />
+      <workItem from="1576519091267" duration="3572000" />
     </task>
     <servers />
   </component>
