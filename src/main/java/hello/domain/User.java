@@ -11,8 +11,8 @@ public class User {
     private Integer id;
 
     private String email;
-    private int height;
-    private int weight;
+    private Integer height;
+    private Integer weight;
 
     public Integer getId() {
         return id;
@@ -30,19 +30,19 @@ public class User {
         this.email = email;
     }
 
-    public int getHeight() {
+    public Integer getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(Integer height) {
         this.height = height;
     }
 
-    public int getWeight() {
+    public Integer getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(Integer weight) {
         this.weight = weight;
     }
 }

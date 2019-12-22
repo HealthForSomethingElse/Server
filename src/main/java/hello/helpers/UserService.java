@@ -19,7 +19,7 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    private Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
+    private Gson gson = new Gson();
 
     public String userAdd(String inputJson) {
         User user = gson.fromJson(inputJson, User.class);
