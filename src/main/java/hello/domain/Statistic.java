@@ -16,7 +16,7 @@ public class Statistic
     @JoinColumn(name = "userId")
     private User user;
 
-    private Integer userId;
+//    private Integer userId;
 
     private Integer stepsAmount;
     private Integer caloriesLost;
@@ -24,13 +24,13 @@ public class Statistic
     private Integer drunkWaterGlasses;
 //    List<Exercise> exercises = new ArrayList<>();
 
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer id) {
-        this.userId = id;
-    }
+//    public Integer getUserId() {
+//        return userId;
+//    }
+//
+//    public void setUserId(Integer id) {
+//        this.userId = id;
+//    }
 
     public  User getUser()
     {
