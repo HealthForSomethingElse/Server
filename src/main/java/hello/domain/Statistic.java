@@ -13,7 +13,7 @@ public class Statistic
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Date date;
 
-    private int userid;
+    private int userId;
     private int stepsAmount;
     private int caloriesLost;
     private float distanceTraveled;
@@ -21,11 +21,11 @@ public class Statistic
 //    List<Exercise> exercises = new ArrayList<>();
 
     public Integer getId() {
-        return userid;
+        return userId;
     }
 
     public void setId(Integer id) {
-        this.userid = id;
+        this.userId = id;
     }
 
     public Date getDate() {
