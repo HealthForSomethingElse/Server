@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30dca823-a192-45b4-8c9b-95d97a5965ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/helpers/StatisticService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/controllers/StatisticController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/controllers/StatisticController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/domain/Statistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/domain/Statistic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/repos/StatisticRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/repos/StatisticRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/repos/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/repos/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/helpers/StatisticService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/helpers/StatisticService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +190,7 @@
       <workItem from="1574794079449" duration="30000" />
       <workItem from="1575819298978" duration="38000" />
       <workItem from="1576519091267" duration="13696000" />
-      <workItem from="1577012248256" duration="14925000" />
+      <workItem from="1577012248256" duration="15384000" />
     </task>
     <task id="LOCAL-00001" summary="db">
       <created>1576527338761</created>
@@ -246,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577026402273</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="db">
+      <created>1577035797614</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1577035797614</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

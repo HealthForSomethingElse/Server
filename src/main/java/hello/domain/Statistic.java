@@ -10,7 +10,6 @@ import java.util.List;
 public class Statistic
 {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
     private Date date;
 
     @OneToOne

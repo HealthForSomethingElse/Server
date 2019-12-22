@@ -90,7 +90,7 @@ public class StatisticService {
         jsonObject.addProperty("status",status);
         jsonObject.addProperty("message",message);
 
-        jsonObject.add("user",gson.toJsonTree(statistic));
+        jsonObject.add("statistic",gson.toJsonTree(statistic));
         String jsonToClient = jsonObject.toString();
 
         return jsonToClient;
