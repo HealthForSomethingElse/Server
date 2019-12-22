@@ -10,11 +10,13 @@ import java.util.List;
 public class Statistic
 {
     @Id
-    private Date date;
-
-    @OneToOne(targetEntity = User.class)
     private Integer userId;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @PrimaryKeyJoinColumn
+    private User user;
+
+    private Date date;
     private Integer stepsAmount;
     private Integer caloriesLost;
     private Float distanceTraveled;
