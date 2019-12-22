@@ -1,6 +1,9 @@
 package hello.domain;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "statistic", schema = "public")
@@ -8,27 +11,28 @@ public class Statistic
 {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer id;
+    private Date date;
 
-    private String date;
+    private int usetid;
     private int stepsAmount;
     private int caloriesLost;
     private float distanceTraveled;
     private int drunkWaterGlasses;
+    List<Exercise> exercises = new ArrayList<>();
 
     public Integer getId() {
-        return id;
+        return usetid;
     }
 
     public void setId(Integer id) {
-        this.id = id;
+        this.usetid = id;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
