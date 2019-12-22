@@ -31,7 +31,7 @@ public class StatisticService {
         User userInDb = userRepository.findUserById(statisticFromClient.getUserId());
         String message;
         Integer status;
-        if(statisticInDb.getUserId().equals(userInDb.getId())){
+        if(statisticInDb.getUserId() == userInDb.getId()){
             statisticRepository.save(statisticFromClient);
             message = "Statistic saved";
             System.out.println("statistic saved" + inputJson);
