@@ -16,7 +16,7 @@ public class Statistic
     private User user;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "id")
     private Integer userId;
 
     private Integer stepsAmount;
