@@ -6,11 +6,18 @@ import com.google.gson.JsonObject;
 import hello.domain.User;
 import hello.repos.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+
+@Service
 public class UserService {
 
+    private final UserRepository userRepository;
+
     @Autowired
-    private UserRepository userRepository;
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     private Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
 
