@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30dca823-a192-45b4-8c9b-95d97a5965ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/helpers/StatisticService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/controllers/StatisticController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/controllers/StatisticController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hello/domain/Statistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/domain/Statistic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hello/repos/StatisticRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/repos/StatisticRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/repos/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/repos/UserRepository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,11 +174,6 @@
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f6b17554" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceNode@7ff2fc3b" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f6b17554" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@160cb012" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
           </expand>
           <select />
         </treeState>
@@ -197,7 +195,7 @@
       <workItem from="1574794079449" duration="30000" />
       <workItem from="1575819298978" duration="38000" />
       <workItem from="1576519091267" duration="13696000" />
-      <workItem from="1577012248256" duration="9564000" />
+      <workItem from="1577012248256" duration="14925000" />
     </task>
     <task id="LOCAL-00001" summary="db">
       <created>1576527338761</created>
@@ -234,7 +232,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577025264483</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="db">
+      <created>1577026313325</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577026313325</updated>
+    </task>
+    <task id="LOCAL-00007" summary="db">
+      <created>1577026402273</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1577026402273</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
