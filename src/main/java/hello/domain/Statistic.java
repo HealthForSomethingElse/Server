@@ -17,12 +17,12 @@ public class Statistic
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")
-    private int userId;
+    private Integer userId;
 
-    private int stepsAmount;
-    private int caloriesLost;
-    private float distanceTraveled;
-    private int drunkWaterGlasses;
+    private Integer stepsAmount;
+    private Integer caloriesLost;
+    private Float distanceTraveled;
+    private Integer drunkWaterGlasses;
 //    List<Exercise> exercises = new ArrayList<>();
 
     public Integer getUserId() {
@@ -46,7 +46,7 @@ public class Statistic
         this.date = date;
     }
 
-    public int getStepsAmount() {
+    public Integer getStepsAmount() {
         return stepsAmount;
     }
 
@@ -54,7 +54,7 @@ public class Statistic
         this.stepsAmount = stepsAmount;
     }
 
-    public int getCaloriesLost() {
+    public Integer getCaloriesLost() {
         return caloriesLost;
     }
 
@@ -62,7 +62,7 @@ public class Statistic
         this.caloriesLost = caloriesLost;
     }
 
-    public float getDistanceTraveled() {
+    public Float getDistanceTraveled() {
         return distanceTraveled;
     }
 
@@ -70,7 +70,7 @@ public class Statistic
         this.distanceTraveled = distanceTraveled;
     }
 
-    public int getDrunkWaterGlasses() {
+    public Integer getDrunkWaterGlasses() {
         return drunkWaterGlasses;
     }
 
