@@ -15,7 +15,10 @@ public class Statistic
     @OneToOne
     private User user;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
     private int userId;
+
     private int stepsAmount;
     private int caloriesLost;
     private float distanceTraveled;

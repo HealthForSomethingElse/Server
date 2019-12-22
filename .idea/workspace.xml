@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30dca823-a192-45b4-8c9b-95d97a5965ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/helpers/StatisticService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/helpers/StatisticService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/controllers/StatisticController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/controllers/StatisticController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/domain/Statistic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/domain/Statistic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/helpers/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/helpers/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/repos/StatisticRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/repos/StatisticRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hello/repos/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hello/repos/UserRepository.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +169,7 @@
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f6b17554" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@58b09534" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@5b408475" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -190,7 +197,7 @@
       <workItem from="1574794079449" duration="30000" />
       <workItem from="1575819298978" duration="38000" />
       <workItem from="1576519091267" duration="13696000" />
-      <workItem from="1577012248256" duration="15384000" />
+      <workItem from="1577012248256" duration="15961000" />
     </task>
     <task id="LOCAL-00001" summary="db">
       <created>1576527338761</created>
@@ -248,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577035797614</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="db">
+      <created>1577036386534</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1577036386534</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
