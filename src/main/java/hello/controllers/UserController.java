@@ -19,11 +19,13 @@ public class UserController {
 
     @PostMapping("/user/add")
     public String add(@RequestBody String inputJson){
+        System.out.println(inputJson);
         return userService.userAdd(inputJson);
     }
 
     @PostMapping("/user/get")
     public String get(@RequestBody String outputJson) {
+        System.out.println(outputJson);
         return userService.userGet(outputJson);
     }
 

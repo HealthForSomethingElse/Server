@@ -30,12 +30,14 @@ public class UserService {
         if(userInDb == null) {
             userRepository.save(user);
             message = "User saved";
+            System.out.println("user saved" + inputJson);
             status = Status.OK_STATUS.getStatusCode();
             userId = userRepository.findByEmail(user.getEmail()).getId();
             return  getJsonString(message, status, userId);
         }else{
             message = "User already exist";
             status = Status.BAD_STATUS.getStatusCode();
+            System.out.println("user already exist" + inputJson);
         }
         return getJsonString(message, status);
     }
@@ -48,13 +50,15 @@ public class UserService {
         if(userRepository.existsUserByEmail(user.getEmail())){
             user = userRepository.findByEmail(user.getEmail());
             status = Status.OK_STATUS.getStatusCode();
-            message = "user exists";
+            message = "User exists";
+            System.out.println("user exist" + outputJson);
             return getJsonStringWithUser(user, message, status);
         }
         else
         {
             status = Status.BAD_STATUS.getStatusCode();
-            message = "user not exist";
+            message = "User not exist";
+            System.out.println("user not exist" + outputJson);
         }
         return getJsonString(message, status);
     }
