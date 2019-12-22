@@ -31,17 +31,17 @@ public class StatisticService {
         User userInDb = userRepository.findUserById(statisticFromClient.getUserId());
         String message;
         Integer status;
-        if(statisticInDb != null){
+//        if(statisticInDb != null){
             statisticRepository.save(statisticFromClient);
             message = "Statistic saved";
             System.out.println("statistic saved" + inputJson);
             status = Status.OK_STATUS.getStatusCode();
-        }
-        else {
+//        }
+//        else {
             message = "This user not exist";
             status = Status.BAD_STATUS.getStatusCode();
             System.out.println("This user not exist" + inputJson);
-        }
+//        }
         return getJsonString(message, status);
     }
 
