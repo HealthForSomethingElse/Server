@@ -13,10 +13,9 @@ public class Statistic
     private Date date;
 
     @OneToOne
+    @JoinColumn(name = "userId")
     private User user;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id")
     private Integer userId;
 
     private Integer stepsAmount;
