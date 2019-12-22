@@ -18,7 +18,7 @@ public class Statistic
     private int caloriesLost;
     private float distanceTraveled;
     private int drunkWaterGlasses;
-    List<Exercise> exercises = new ArrayList<>();
+//    List<Exercise> exercises = new ArrayList<>();
 
     public Integer getId() {
         return usetid;
