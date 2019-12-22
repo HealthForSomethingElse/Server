@@ -27,11 +27,11 @@ public class StatisticService {
 
     public String statisticAdd(String inputJson) {
         Statistic statisticFromClient = gson.fromJson(inputJson, Statistic.class);
-        Statistic statisticInDb = statisticRepository.findStatisticByUserId(statisticFromClient.getUserId());
-        User userInDb = userRepository.findUserById(statisticFromClient.getUserId());
+        Statistic statisticInDb = statisticRepository.findStatisticByUserId(statisticFromClient.getUser().getId());
+        User userInDb = userRepository.findUserById(statisticFromClient.getUser().getId());
         String message;
         Integer status;
-        if(statisticInDb.getUserId().equals(userInDb.getId())){
+        if(statisticInDb.getUser().getId().equals(userInDb.getId())){
             statisticRepository.save(statisticFromClient);
             message = "Statistic saved";
             System.out.println("statistic saved" + inputJson);
@@ -50,8 +50,8 @@ public class StatisticService {
         Statistic statisticFromClient = gson.fromJson(outputJson, Statistic.class);
         String message;
         Integer status;
-        if(statisticRepository.existsByUserId(statisticFromClient.getUserId())){
-            statisticFromClient = statisticRepository.findStatisticByUserId(statisticFromClient.getUserId());
+        if(statisticRepository.existsByUserId(statisticFromClient.getUser().getId())){
+            statisticFromClient = statisticRepository.findStatisticByUserId(statisticFromClient.getUser().getId());
             status = Status.OK_STATUS.getStatusCode();
             message = "User exists";
             System.out.println("user exist" + outputJson);
