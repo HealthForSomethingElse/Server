@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30dca823-a192-45b4-8c9b-95d97a5965ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/controllers/StatisticController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/domain/Exercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/helpers/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/helpers/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/domain/Statistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/domain/Statistic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/repos/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/repos/UserRepository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +185,7 @@
       <workItem from="1574794079449" duration="30000" />
       <workItem from="1575819298978" duration="38000" />
       <workItem from="1576519091267" duration="13696000" />
-      <workItem from="1577012248256" duration="6089000" />
+      <workItem from="1577012248256" duration="6767000" />
     </task>
     <task id="LOCAL-00001" summary="db">
       <created>1576527338761</created>
