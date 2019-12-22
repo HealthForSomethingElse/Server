@@ -10,6 +10,9 @@ public class User {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
 
+    @OneToOne(mappedBy = "userId", cascade = CascadeType.ALL)
+    private Statistic statistic;
+
     private String email;
     private Integer height;
     private Integer weight;

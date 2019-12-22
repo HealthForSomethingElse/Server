@@ -12,30 +12,31 @@ public class Statistic
     @Id
     private Date date;
 
-    @OneToOne
-    @JoinColumn(name = "userId")
-    private User user;
+//    @OneToOne
+//    @JoinColumn
+//    private User user;
 
-//    private Integer userId;
+    @MapsId
+    private Integer userId;
 
     private Integer stepsAmount;
     private Integer caloriesLost;
     private Float distanceTraveled;
     private Integer drunkWaterGlasses;
-//    List<Exercise> exercises = new ArrayList<>();
+    List<Exercise> exercises = new ArrayList<>();
 
-//    public Integer getUserId() {
-//        return userId;
-//    }
-//
-//    public void setUserId(Integer id) {
-//        this.userId = id;
-//    }
-
-    public  User getUser()
-    {
-        return user;
+    public Integer getUserId() {
+        return userId;
     }
+
+    public void setUserId(Integer id) {
+        this.userId = id;
+    }
+
+//    public  User getUser()
+//    {
+//        return user;
+//    }
 
     public Date getDate() {
         return date;
