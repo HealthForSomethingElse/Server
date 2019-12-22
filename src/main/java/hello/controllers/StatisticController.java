@@ -18,13 +18,13 @@ public class StatisticController {
     }
 
 
-    @PostMapping("/user/add")
+    @PostMapping("/statistic/add")
     public String add(@RequestBody String inputJson){
         System.out.println(inputJson);
         return statisticService.statisticAdd(inputJson);
     }
 
-    @PostMapping("/user/get")
+    @PostMapping("/statistic/get")
     public String get(@RequestBody String outputJson) {
         System.out.println(outputJson);
         return statisticService.statisticAdd(outputJson);
