@@ -1,43 +1,26 @@
 package hello.domain;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.Objects;
+import java.util.List;
 
 @Entity
 @Table(name = "statistic", schema = "public")
 public class Statistic
 {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer statisticId;
+    private Integer userId;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "userId", insertable = false, updatable = false)
+    @PrimaryKeyJoinColumn
     private User user;
 
-    private Integer userId = user.getId();
     private Date date;
     private Integer stepsAmount;
     private Integer caloriesLost;
     private Float distanceTraveled;
     private Integer drunkWaterGlasses;
-
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
-
-    public Integer getStatisticId() {
-        return statisticId;
-    }
-
-    public void setStatisticId(Integer statisticId) {
-        this.statisticId = statisticId;
-    }
 
     public User getUser() {
         return user;
@@ -45,6 +28,14 @@ public class Statistic
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer id) {
+        this.userId = id;
     }
 
     public Date getDate() {

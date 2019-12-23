@@ -9,7 +9,7 @@ import java.util.Date;
 
 @Repository
 public interface StatisticRepository extends CrudRepository<Statistic, Integer> {
-    boolean existsStatisticByUser_Id(Integer id);
-    Statistic findByUser_Id(Integer id);
+    Statistic findByUserId(Integer id);
+    boolean existsStatisticByUserId(Integer id);
 
 }
