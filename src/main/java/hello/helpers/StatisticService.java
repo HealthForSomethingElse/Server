@@ -47,15 +47,15 @@ public class StatisticService {
 
 
     public String statisticGet(String outputJson) {
-        Statistic statisticFromClient = gson.fromJson(outputJson, Statistic.class);
-        String message;
-        Integer status;
-        if(statisticRepository.existsByUserId(statisticFromClient.getUserId())){
-            statisticFromClient = statisticRepository.findStatisticByUserId(statisticFromClient.getUserId());
+        Statistic statisticFromServer = gson.fromJson(outputJson,Statistic.class);
+        String message = "user does not exist";
+        Integer status = Status.BAD_STATUS.getStatusCode();
+        if(statisticRepository.existsStatisticByUserId(statisticFromServer.getUserId())){
+            statisticFromServer = statisticRepository.findByUserId(statisticFromServer.getUserId());
             status = Status.OK_STATUS.getStatusCode();
             message = "User exists";
             System.out.println("user exist" + outputJson);
-            return getJsonStringWithUser(statisticFromClient, message, status);
+            return getJsonStringWithUser(statisticFromServer, message, status);
         }
         else
         {
