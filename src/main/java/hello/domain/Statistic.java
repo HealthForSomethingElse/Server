@@ -10,6 +10,7 @@ import java.util.List;
 public class Statistic
 {
     @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer statisticId;
 
     @OneToOne(cascade = CascadeType.ALL)
