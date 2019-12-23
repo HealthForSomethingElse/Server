@@ -13,7 +13,7 @@ public class Statistic
     private Integer statisticId;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "userId")
+    @JoinColumn(name = "userId", insertable = false, updatable = false)
     private User user;
 
     private Integer userId = user.getId();
