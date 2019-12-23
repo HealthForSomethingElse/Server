@@ -1,54 +1,52 @@
 package hello.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 @Entity
+@Table(name = "statistic", schema = "public")
 public class Statistic
 {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer id;
+    private Integer userId;
 
-    private int height;
-    private int weight;
-    private int stepsAmount;
-    private int caloriesLost;
-    private float distanceTraveled;
-    private int drunkWaterGlasses;
-    private enum exerciseName
-    {
-        Ilya,
-        Jirniy
+    @OneToOne(cascade = CascadeType.ALL)
+    @PrimaryKeyJoinColumn
+    private User user;
+
+    private Date date;
+    private Integer stepsAmount;
+    private Integer caloriesLost;
+    private Float distanceTraveled;
+    private Integer drunkWaterGlasses;
+
+    public User getUser() {
+        return user;
     }
 
-    public Integer getId() {
-        return id;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public int getHeight() {
-        return height;
+    public void setUserId(Integer id) {
+        this.userId = id;
     }
 
-    public void setHeight(int height) {
-        this.height = height;
+    public Date getDate() {
+        return date;
     }
 
-    public int getWeight() {
-        return weight;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
-
-    public int getStepsAmount() {
+    public Integer getStepsAmount() {
         return stepsAmount;
     }
 
@@ -56,7 +54,7 @@ public class Statistic
         this.stepsAmount = stepsAmount;
     }
 
-    public int getCaloriesLost() {
+    public Integer getCaloriesLost() {
         return caloriesLost;
     }
 
@@ -64,7 +62,7 @@ public class Statistic
         this.caloriesLost = caloriesLost;
     }
 
-    public float getDistanceTraveled() {
+    public Float getDistanceTraveled() {
         return distanceTraveled;
     }
 
@@ -72,7 +70,7 @@ public class Statistic
         this.distanceTraveled = distanceTraveled;
     }
 
-    public int getDrunkWaterGlasses() {
+    public Integer getDrunkWaterGlasses() {
         return drunkWaterGlasses;
     }
 
