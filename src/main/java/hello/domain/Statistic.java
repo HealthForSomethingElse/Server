@@ -10,17 +10,27 @@ import java.util.List;
 public class Statistic
 {
     @Id
-    private Integer userId;
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private Integer statisticId;
 
     @OneToOne(cascade = CascadeType.ALL)
     @PrimaryKeyJoinColumn
     private User user;
 
+    private Integer userId;
     private Date date;
     private Integer stepsAmount;
     private Integer caloriesLost;
     private Float distanceTraveled;
     private Integer drunkWaterGlasses;
+
+    public Integer getStatisticId() {
+        return statisticId;
+    }
+
+    public void setStatisticId(Integer statisticId) {
+        this.statisticId = statisticId;
+    }
 
     public User getUser() {
         return user;

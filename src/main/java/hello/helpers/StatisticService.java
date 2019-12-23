@@ -36,8 +36,8 @@ public class StatisticService {
         Statistic statisticFromServer = gson.fromJson(outputJson,Statistic.class);
         String message;
         Integer status;
-        if(statisticRepository.existsStatisticByUserId(statisticFromServer.getUserId())){
-            statisticFromServer = statisticRepository.findByUserId(statisticFromServer.getUserId());
+        if(statisticRepository.existsStatisticByUserIdAndDate(statisticFromServer.getUserId(), statisticFromServer.getDate())){
+            statisticFromServer = statisticRepository.findByUserIdAndDate(statisticFromServer.getUserId(), statisticFromServer.getDate());
             status = Status.OK_STATUS.getStatusCode();
             message = "User exists";
             System.out.println("user exist" + outputJson);
