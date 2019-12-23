@@ -10,24 +10,23 @@ import java.util.List;
 public class Statistic
 {
     @Id
-    private Integer userId;
+    private Date date;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @PrimaryKeyJoinColumn
-    User user;
+    @JoinColumn(name = "userId")
+    private User user;
 
-    private Date date;
     private Integer stepsAmount;
     private Integer caloriesLost;
     private Float distanceTraveled;
     private Integer drunkWaterGlasses;
 
-    public Integer getUserId() {
-        return userId;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserId(Integer id) {
-        this.userId = id;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public Date getDate() {

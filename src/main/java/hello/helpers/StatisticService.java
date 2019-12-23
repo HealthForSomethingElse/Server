@@ -15,12 +15,10 @@ import org.springframework.stereotype.Service;
 public class StatisticService {
 
     private final StatisticRepository statisticRepository;
-    private final  UserRepository userRepository;
 
     @Autowired
-    public StatisticService(StatisticRepository statisticRepository, UserRepository userRepository) {
+    public StatisticService(StatisticRepository statisticRepository) {
         this.statisticRepository = statisticRepository;
-        this.userRepository = userRepository;
     }
 
     private Gson gson = new Gson();
@@ -41,8 +39,8 @@ public class StatisticService {
         Statistic statisticFromServer = gson.fromJson(outputJson,Statistic.class);
         String message;
         Integer status;
-        if(statisticRepository.existsStatisticByUserId(statisticFromServer.getUserId())){
-            statisticFromServer = statisticRepository.findByUserId(statisticFromServer.getUserId());
+        if(statisticRepository.existsStatisticByUser_Id(statisticFromServer.getUser().getId())){
+            statisticFromServer = statisticRepository.findByUser_Id(statisticFromServer.getUser().getId());
             status = Status.OK_STATUS.getStatusCode();
             message = "User exists";
             System.out.println("user exist" + outputJson);
