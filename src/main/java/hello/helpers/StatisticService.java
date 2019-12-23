@@ -55,7 +55,7 @@ public class StatisticService {
             status = Status.OK_STATUS.getStatusCode();
             message = "User exists";
             System.out.println("user exist" + outputJson);
-            return getJsonStringWithUser(statisticFromServer, message, status);
+            return getJsonStringWithStatistic(statisticFromServer, message, status);
         }
         else
         {
@@ -75,17 +75,7 @@ public class StatisticService {
         return jsonToClient;
     }
 
-//    private String getJsonString(String message, Integer status, Integer id) {
-//        JsonObject jsonObject = new JsonObject();
-//        jsonObject.addProperty("status",status);
-//        jsonObject.addProperty("message",message);
-//        jsonObject.addProperty("id", id);
-//        String jsonToClient = jsonObject.toString();
-//
-//        return jsonToClient;
-//    }
-
-    private String getJsonStringWithUser(Statistic statistic, String message, Integer status) {
+    private String getJsonStringWithStatistic(Statistic statistic, String message, Integer status) {
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("status",status);
         jsonObject.addProperty("message",message);
