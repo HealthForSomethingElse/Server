@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30dca823-a192-45b4-8c9b-95d97a5965ce" name="Default Changelist" comment="" />
+    <list default="true" id="30dca823-a192-45b4-8c9b-95d97a5965ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/domain/Statistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/domain/Statistic.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +192,7 @@
       <workItem from="1575819298978" duration="38000" />
       <workItem from="1576519091267" duration="13696000" />
       <workItem from="1577012248256" duration="20897000" />
-      <workItem from="1577129218005" duration="3714000" />
+      <workItem from="1577129218005" duration="4297000" />
     </task>
     <task id="LOCAL-00001" summary="db">
       <created>1576527338761</created>
@@ -422,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577132807545</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="db">
+      <created>1577133103969</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1577133103969</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

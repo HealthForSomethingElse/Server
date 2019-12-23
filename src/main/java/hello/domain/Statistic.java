@@ -1,9 +1,8 @@
 package hello.domain;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name = "statistic", schema = "public")
@@ -13,7 +12,7 @@ public class Statistic
     private Integer statisticId;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "userId", insertable = false, updatable = false)
+    @JoinColumn(name = "userId_FK", insertable = false, updatable = false)
     private User user;
 
     private Integer userId = user.getId();
