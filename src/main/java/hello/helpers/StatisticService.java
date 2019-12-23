@@ -27,21 +27,12 @@ public class StatisticService {
 
     public String statisticAdd(String inputJson) {
         Statistic statisticFromClient = gson.fromJson(inputJson, Statistic.class);
-        Statistic statisticInDb = statisticRepository.findStatisticByUserId(statisticFromClient.getUserId());
-        User userInDb = userRepository.findUserById(statisticFromClient.getUserId());
         String message;
         Integer status;
-//        if(statisticInDb != null){
             statisticRepository.save(statisticFromClient);
             message = "Statistic saved";
             System.out.println("statistic saved" + inputJson);
             status = Status.OK_STATUS.getStatusCode();
-//        }
-//        else {
-            message = "This user not exist";
-            status = Status.BAD_STATUS.getStatusCode();
-            System.out.println("This user not exist" + inputJson);
-//        }
         return getJsonString(message, status);
     }
 
