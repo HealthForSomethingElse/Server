@@ -9,10 +9,11 @@ import java.util.Objects;
 public class Statistic
 {
     @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer statisticId;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "userId_FK", insertable = false, updatable = false)
+    @JoinColumn(name = "userId", insertable = false, updatable = false)
     private User user;
 
     private Integer userId = user.getId();
