@@ -27,7 +27,7 @@ public class StatisticController {
     @PostMapping("/statistic/get")
     public String get(@RequestBody String outputJson) {
         System.out.println(outputJson);
-        return statisticService.statisticAdd(outputJson);
+        return statisticService.statisticGet(outputJson);
     }
 
 }

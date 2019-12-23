@@ -48,8 +48,8 @@ public class StatisticService {
 
     public String statisticGet(String outputJson) {
         Statistic statisticFromServer = gson.fromJson(outputJson,Statistic.class);
-        String message = "user does not exist";
-        Integer status = Status.BAD_STATUS.getStatusCode();
+        String message;
+        Integer status;
         if(statisticRepository.existsStatisticByUserId(statisticFromServer.getUserId())){
             statisticFromServer = statisticRepository.findByUserId(statisticFromServer.getUserId());
             status = Status.OK_STATUS.getStatusCode();
