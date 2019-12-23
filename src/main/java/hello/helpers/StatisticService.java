@@ -1,12 +1,9 @@
 package hello.helpers;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import hello.domain.Statistic;
-import hello.domain.User;
 import hello.repos.StatisticRepository;
-import hello.repos.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -39,8 +36,8 @@ public class StatisticService {
         Statistic statisticFromServer = gson.fromJson(outputJson,Statistic.class);
         String message;
         Integer status;
-        if(statisticRepository.existsStatisticByUser_Id(statisticFromServer.getUser().getId())){
-            statisticFromServer = statisticRepository.findByUser_Id(statisticFromServer.getUser().getId());
+        if(statisticRepository.existsStatisticByUser_Id(statisticFromServer.getUserId())){
+            statisticFromServer = statisticRepository.findByUser_Id(statisticFromServer.getUserId());
             status = Status.OK_STATUS.getStatusCode();
             message = "User exists";
             System.out.println("user exist" + outputJson);
