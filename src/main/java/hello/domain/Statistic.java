@@ -1,9 +1,8 @@
 package hello.domain;
 
 import javax.persistence.*;
-import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 
 @Entity
 @Table(name = "statistic", schema = "public")
@@ -18,7 +17,7 @@ public class Statistic
     private User user;
 
     private Integer userId;
-    private Date date;
+    private Calendar date;
     private Integer stepsAmount;
     private Integer caloriesLost;
     private Float distanceTraveled;
@@ -48,11 +47,11 @@ public class Statistic
         this.userId = id;
     }
 
-    public Date getDate() {
+    public Calendar getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Calendar date) {
         this.date = date;
     }
 
